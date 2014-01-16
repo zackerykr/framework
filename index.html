@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Framework</title>
+	
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	<!--Scripts-->
+	<script src="js/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		windowHeight = $(window).height();
+		$('#activebrowser').css('min-height', windowHeight);
+		
+		$(window).resize(function() {
+			windowHeight = $(window).height();
+			$('#activebrowser').css('min-height',windowHeight -200);
+		});
+		
+		windowWidth = $(window).width();
+		$('#activewidth').css('min-width',windowWidth);
+		
+		$(window).resize(function() {
+			windowWidth = $(window).width();
+			$('#activewidth').css('min-width',windowWidth);
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="nav">
+	<ul>
+		<li class="title">Framework</li>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="docs.html">Docs</a></li>
+		<li><a href="css.html">CSS</a></li>
+	</ul>
+</div>
+<div class="headerContainer" id="activebrowser">
+	<h1>Framework</h1>
+	<p>A light, modern Bootstrap and Foundation alternative, with slick intuitive design and extremely fast compressed files. And best of all, it's all open source</p>
+	<a href="#" class="button-main">See Examples & Docs &raquo;</a>
+</div>
+	<div class="github">
+		<p><span class="fa fa-github"></span> <span class="fa fa-twitter"></span> <span class="fa fa-facebook"></span> | 0 Forks, 2 downloads</p>
+	</div>
+<div class="centered footer">
+	<p>Built by Zack Ruybal, &copy; 2013-2014. All rights reserved.</p>
+</div>
+</body>
+</html>

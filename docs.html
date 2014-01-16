@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Framework - Docs</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+	$(document).ready(function() {
+		windowWidth = $(window).width();
+		$('#activewidth').css('min-width',windowWidth -400);
+		
+		$(window).resize(function() {
+			windowWidth = $(window).width();
+			$('#activewidth').css('min-width',windowWidth -400);
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="nav">
+	<ul>
+		<li class="title">Framework</li>
+		<li><a href="index.html">Home</a></li>
+		<li><a class="active" href="docs.html">Docs</a></li>
+		<li><a href="css.html">CSS</a></li>
+	</ul>
+</div>
+<div class="sidenav">
+	<ul>
+		<li><a href="#requirements">Requirements</a></li>
+		<li><a href="#basics">Basic Layouts</a></li>
+		<li><a href="#grid">Grid</a></li>
+		<li><a href="#header">Headers</a></li>
+		<li><a href="#navigation">Navigation</a></li>
+		<li><a href="#buttons">Buttons</a></li>
+		<li><a href="#textstyling">Text Styling</a></li>
+		<li><a href="#modal">Modals</a></li>
+		<li><a href="#fillwindow">Full Window</a></li>
+		<li><a href="#tooltips">Tooltips</a></li>
+	</ul>
+</div>
+<div class="content" id="activewidth">
+<h2>Requirements</h2>
+<p>At the top of every document, you must include <code>&lt;!DOCTYPE html&gt;</code> to make sure you get all modern futures. The end product will look something like this:<br>
+	<pre>
+	<code>
+	&lt;!DOCTYPE html&gt;<br>
+	&lt;html&gt;<br>
+	&lt;head&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Framework Template&lt;/title&gt;<br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="css/framework.css"&gt;<br>
+	&lt;/head&gt;<br>
+	&lt;body&gt;<br>
+	&lt;/body&gt;<br>
+	&lt;/html&gt;
+	</code>
+	</pre>
+</p>
+<h2>Basic Layouts</h2>
+<p>Below there are a few basic layouts for anyone to use. You can download the source off of <a href="#">Github</a>.<br>
+<a href="landing.html">Landing Page Demo</a><br>
+<a href="product_ex.html">Products page example</a><br>
+<a href="blog_ex.html">Blog example</a>
+</p>
+</div>
+</body>
+</html>
