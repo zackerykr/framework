@@ -1,4 +1,4 @@
 framework
 =========
 
-A Bootstrap &amp; Foundation alternative
+A clean, modern Bootstrap &amp; Foundation alternative
